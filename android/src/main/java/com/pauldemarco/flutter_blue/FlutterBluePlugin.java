@@ -197,7 +197,13 @@ public class FlutterBluePlugin implements FlutterPlugin, ActivityAware, MethodCa
                 result.success(null);
                 break;
             }
-
+            
+            case "setUniqueId":
+            {
+                result.success(null);
+                break;
+            }
+            
             case "state":
             {
                 Protos.BluetoothState.Builder p = Protos.BluetoothState.newBuilder();
